@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        width: 300px;
+        height: 200px;
+        transition: transform 0.3s;
+      }
+
+      img:hover {
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Interactive Webpage</h1>
+
+    <div onclick="clicked('you click it')">
+      <p>Click anywhere on the page.</p>
+    </div>
+
+    <input onkeydown="keyCode('pressed key ')" />
+
+    <img
+      id="myImage"
+      src="./img/360_F_556989229_lBBasUTWiFGKyhyeUXiFcQSY0IJYAKRv.jpg"
+      onmouseover="changeImageSource()"
+    />
+    <script src="./event.js"></script>
+  </body>
+</html>

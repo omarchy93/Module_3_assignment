@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom img</title>
+  </head>
+  <style>
+    #myImage {
+      width: 500px;
+      height: 600px;
+    }
+  </style>
+  <body>
+    <img id="myImage" src="./img/971.jpg " alt="Initial Image" />
+
+    <button id="myButton">Change Image</button>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        let myButton = document.getElementById("myButton");
+        let myImage = document.getElementById("myImage");
+
+        myButton.addEventListener("click", function () {
+          myImage.src =
+            "./img/360_F_556989229_lBBasUTWiFGKyhyeUXiFcQSY0IJYAKRv.jpg";
+          myImage.alt = "New Image";
+        });
+      });
+    </script>
+  </body>
+</html>

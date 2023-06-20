@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>navigator</title>
+  </head>
+  <body>
+    <script>
+      function getApp() {
+        let appCodeName = navigator.appCodeName;
+        let appName = navigator.appName;
+        let appVersion = navigator.appVersion;
+
+        document.write(`${appCodeName} <br>`);
+        document.write(`${appName} <br>`);
+        document.write(`${appVersion} <br>`);
+      }
+      getApp();
+    </script>
+  </body>
+</html>
